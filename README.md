@@ -54,6 +54,7 @@ Tailwind equivalents (where applicable) should be configured in `tailwind.config
 - 📱 Design must be responsive (mobile-first).
 - 🧠 Prioritize clarity, accessibility, and fast interaction.
 - ✨ Animations should be subtle and purposeful, not flashy.
+- Use Inter as the main font
 
 ---
 
