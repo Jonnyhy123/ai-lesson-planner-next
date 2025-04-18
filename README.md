@@ -82,3 +82,35 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+## Components
+
+The application is built using the following components:
+
+### Core Components
+- `Navigation.tsx`: Main navigation bar with links to different sections
+- `Features.tsx`: Displays the key features of the application
+- `Pricing.tsx`: Shows the pricing plans
+- `CustomSelect.tsx`: Custom dropdown component using Headless UI for consistent styling
+
+### Form Components
+- `LessonPlanForm.tsx`: Main form for generating lesson plans, including:
+  - Subject input
+  - Lesson length selection
+  - Class ability selection
+  - Lesson objective input
+  - Learning objectives textarea
+  - Resources available textarea
+  - Output format selection (PDF/DOCX)
+
+### Page Components
+- `pages/index.tsx`: Home page with call-to-action button
+- `pages/auth/login.tsx`: Login page with email/password form
+- `pages/auth/register.tsx`: Registration page
+- `pages/user/lesson-planner.tsx`: Protected lesson planner page with the main form
+
+### Authentication Flow
+1. User clicks "Generate Lesson Plans Now" on the home page
+2. Redirected to login page
+3. After login, redirected to the lesson planner page
+4. User can fill out the form and select their preferred output format (PDF or DOCX)

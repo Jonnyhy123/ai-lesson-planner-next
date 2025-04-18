@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Navigation from '../components/Navigation'
-import LessonPlanForm from '../components/LessonPlanForm'
 import Features from '../components/Features'
 import Pricing from '../components/Pricing'
 
@@ -18,8 +17,22 @@ export default function Home() {
         <Navigation />
 
         <main>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <LessonPlanForm />
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div className="text-center mb-24">
+              <h1 className="text-4xl font-bold text-center mb-6 text-gray-900">
+                Create Engaging Lesson Plans in Minutes
+              </h1>
+              <p className="text-xl text-gray-700 text-center mb-12 max-w-2xl mx-auto">
+                Transform your teaching with AI-powered lesson planning. Save hours every week while creating more engaging lessons.
+              </p>
+              <a 
+                href="/auth/login" 
+                className="inline-block bg-deep-teal text-white px-10 py-4 rounded-lg font-medium hover:bg-teal-700 transition-all shadow-md text-lg"
+              >
+                Generate Lesson Plans Now
+              </a>
+            </div>
+
             <Features />
             <Pricing />
 
