@@ -24,6 +24,49 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+### 🧭 Design Guidelines
+
+> These guidelines should be followed by all contributors and AI tools (e.g., Cursor) when modifying or expanding the app.
+
+---
+
+#### 🎨 Color Palette
+
+Use this consistent brand color palette throughout the UI. Favor minimal and soft contrast combinations, inspired by [mindbloomlearning.com](https://www.mindbloomlearning.com).
+
+| Name        | Hex       | Description                       |
+|-------------|-----------|-----------------------------------|
+| Deep Teal   | `#3C909A` | Primary accent, buttons, headings |
+| Soft Coral  | `#FFDEDE` | Backgrounds, highlights           |
+| Black       | `#111111` | Text and core content             |
+| Mint Green  | `#96E2DC` | Secondary UI accents              |
+| Off White   | `#FEFBFB` | Background and layout base        |
+
+Tailwind equivalents (where applicable) should be configured in `tailwind.config.js` using custom `extend` colors.
+
+---
+
+#### 💡 Styling Rules
+
+- ✅ Use **Tailwind CSS utility classes only**.
+- ❌ Do not use external CSS frameworks (e.g., Bootstrap, MUI).
+- 🎯 Stick to conventional, readable layouts — no experimental or "clever" UI.
+- 📱 Design must be responsive (mobile-first).
+- 🧠 Prioritize clarity, accessibility, and fast interaction.
+- ✨ Animations should be subtle and purposeful, not flashy.
+
+---
+
+#### 🧪 Development Philosophy
+
+- Build with a **production mindset** — all features should be deployable without major revision.
+- Components should load fast and avoid unnecessary complexity.
+- All form flows and responses should be intuitive and focused on real-world teacher use.
+
+---
+
+> 📌 AI Assistants (e.g., Cursor): Use these guidelines to inform styling, structure, and tone of suggestions.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
